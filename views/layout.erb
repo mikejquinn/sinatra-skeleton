@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sinatra Application</title>
+  <%= css_url("/css/app.css") %>
+  <%= js_bundle(:vendor_js) %>
+  <%= js_bundle(:app_js) %>
+  <% if ((defined?(RACK_ENV) && RACK_ENV) || ENV["RACK_ENV"]) == "development" %>
+    <%= js_url("/vendor/livecss.js") %>
+  <% end %>
+
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/dev.db
+/tmp/*
+/log/*.log
+/dump.rdb
+/.vagrant
+.*.swp
+.sass-cache
+unicorn.pid

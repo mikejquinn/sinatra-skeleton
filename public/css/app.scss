@@ -1,0 +1,17 @@
+@import "bourbon";
+@import "css/constants";
+
+body {
+  background-color: white;
+  font-family: $sansFont;
+  color: $textColor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: bold;
+}

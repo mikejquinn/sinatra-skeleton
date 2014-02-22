@@ -1,0 +1,88 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.4.3)
+    awesome_print (1.2.0)
+    backports (3.6.0)
+    bourbon (3.1.8)
+      sass (>= 3.2.0)
+      thor
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.7.0)
+    columnize (0.3.6)
+    debugger (1.6.5)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.1)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.1)
+    execjs (2.0.2)
+    json (1.8.1)
+    kgio (2.8.1)
+    metaclass (0.0.4)
+    mocha (1.0.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.8.4)
+    mysql2 (0.3.15)
+    pathological (0.3.0)
+    pinion (0.3.2)
+      rack (~> 1.0)
+    rack (1.5.2)
+    rack-protection (1.5.2)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    raindrops (0.12.0)
+    rake (10.1.1)
+    sass (3.2.14)
+    sequel (4.7.0)
+    shoulda-context (1.1.6)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sinatra-contrib (1.4.2)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (~> 1.3)
+    thor (0.18.1)
+    tilt (1.4.1)
+    turn (0.9.6)
+      ansi
+    uglifier (2.4.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+    unicorn (4.6.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  bourbon
+  coffee-script
+  debugger
+  json
+  mocha
+  mysql2
+  pathological
+  pinion
+  rack
+  rack-test
+  rake
+  sass
+  sequel
+  shoulda-context
+  sinatra
+  sinatra-contrib
+  turn
+  uglifier
+  unicorn
