@@ -2,7 +2,7 @@
 
 require "bundler/setup"
 require "pathological"
-require "environment.rb"
+require "./environment"
 
 migrate_to_version = nil
 if ARGV.include?("rollback")
@@ -14,7 +14,7 @@ if ARGV.include?("rollback")
   migrate_to_version = versions[-2]
 end
 
-command = "bundle exec sequel -m migrations/"
+command = "bundle exec sequel -m db/migrations/"
 command += " -M #{migrate_to_version}" if migrate_to_version
 
 puts "Migrating to version #{migrate_to_version}" if migrate_to_version
