@@ -63,4 +63,8 @@ class App < Sinatra::Base
     erb :index, layout: :layout
   end
 
+  get "/hello.json" do
+    content_type "application/json"
+    { hello: "world" }.to_json
+  end
 end

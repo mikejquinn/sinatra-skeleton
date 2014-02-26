@@ -25,6 +25,9 @@ group :test do
   gem "rack-test"
   gem "mocha", require: false
 
+  gem "database_cleaner"
+  gem "factory_girl"
+
   # Colorized test output
   gem "turn"
 end
